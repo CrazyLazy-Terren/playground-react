@@ -39,7 +39,7 @@ function App() {
       {emojis.map((e, i) => (
         // <img kenpmy={i} className="emoji" style={e} src="/512.gif" alt="emoji" />
         <div key={i} className="emoji" style={e}>
-          <Lottie src="/512.gif" alt="emoji" />
+          <Lottie alt="emoji" />
         </div>
       ))}
     </div>
