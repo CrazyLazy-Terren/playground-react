@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
 }
 
 .App-link {
@@ -34,5 +35,34 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.emoji {
+  bottom: 0;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  animation: up 3s infinite;
+  opacity: 0;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+    scale: 0.8;
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(1px);
+  }
+  90% {
+    transform: translateY(-500%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500%);
+    scale: 1.1;
+    opacity: 0;
   }
 }
