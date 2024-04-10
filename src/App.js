@@ -1,6 +1,7 @@
 import logo from './logo.svg'
 import './App.css'
 import { useEffect, useState } from 'react'
+import Lottie from './LottiePlayer'
 
 const random = Math.random
 
@@ -36,7 +37,10 @@ function App() {
         </a>
       </header>
       {emojis.map((e, i) => (
-        <img key={i} className="emoji" style={e} src="/512.gif" alt="emoji" />
+        // <img kenpmy={i} className="emoji" style={e} src="/512.gif" alt="emoji" />
+        <div key={i} className="emoji" style={e}>
+          <Lottie src="/512.gif" alt="emoji" />
+        </div>
       ))}
     </div>
   )
